@@ -27,7 +27,8 @@ jobs:
     # Runs a single command using the runners shel
     - name: Create file to commit
       run: |
-        newfile=$(date +'%s') && touch $newfile
+        rm -f directory/*
+        newfile=$(date +'%s') && touch directory/$newfile
     - name: Configure Git
       run: |
         git config --local user.email "action-commit-bot@example.com"
