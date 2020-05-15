@@ -27,6 +27,7 @@ jobs:
     # Runs a single command using the runners shel
     - name: Create file to commit
       run: |
+        mkdir -p directory
         rm -f directory/*
         newfile=$(date +'%s') && touch directory/$newfile
     - name: Configure Git
