@@ -19,3 +19,15 @@ OR user credentials:
 P.S. Do not forgot enable GitHub Action in repository's settings.
 # Why?
 Just for fun! :)
+# Why might this not work?
+- GitHub Actions was disabled for repository
+- Commit are not meet [GitHub conditions](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile)
+```
+Commits will appear on your contributions graph if they meet all of the following conditions:
+
+The email address used for the commits is associated with your GitHub account.
+The commits were made in a standalone repository, not a fork.
+The commits were made:
+In the repository's default branch (usually master)
+In the gh-pages branch (for repositories with project sites)
+```
