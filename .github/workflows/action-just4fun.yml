@@ -31,11 +31,13 @@ jobs:
         rm -f directory/*
         newfile=$(date +'%s') && touch directory/$newfile
     - name: Configure Git
+      #!!! Do not forgot put your emails !!!
       run: |
-        git config --local user.email "action-commit-bot@example.com"
+        git config --local user.email "null@spiridonov.su"
         git config --local user.name "Dummy Fake Activity Bot"
         git add .
         git commit -m "Create fake activity commit" -a
+      #!!! Do not forgot put your emails !!!
 
     # Runs a set of commands using the runners shell
     - name: Push
