@@ -10,7 +10,7 @@ You can configurate schedule of job:
     - cron: 0 12 * * *
   # Run job every day at 12:00 UTC
 ```
-OR user credentials:
+and user credentials:
 ```
         git config --local user.email "action-commit-bot@example.com"
         git config --local user.name "Dummy Fake Activity Bot"
@@ -21,7 +21,7 @@ P.S. Do not forgot enable GitHub Action in repository's settings.
 Just for fun! :)
 # Why might this not work?
 - GitHub Actions was disabled for repository
-- Commit are not meet [GitHub conditions](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile)
+- Commits are not meet [GitHub conditions](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile)
 ```
 Commits will appear on your contributions graph if they meet all of the following conditions:
 
