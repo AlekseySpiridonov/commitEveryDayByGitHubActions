@@ -24,22 +24,24 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shel
+#!!! Do not forgot put your emails !!!
+    - name: Configure Git
+      run: |
+        git config --local user.email "null@spiridonov.su"
+        git config --local user.name "Dummy Fake Activity Bot"        
+#!!! Do not forgot put your emails !!!
+ 
     - name: Create file to commit
       run: |
         mkdir -p directory
         rm -f directory/*
         newfile=$(date +'%s') && touch directory/$newfile
-    - name: Configure Git
-      #!!! Do not forgot put your emails !!!
+    - name: Commit changes
       run: |
-        git config --local user.email "null@spiridonov.su"
-        git config --local user.name "Dummy Fake Activity Bot"
         git add .
         git commit -m "Create fake activity commit" -a
-      #!!! Do not forgot put your emails !!!
 
-    # Runs a set of commands using the runners shell
+    # Push changes
     - name: Push
       run: |
         git push
