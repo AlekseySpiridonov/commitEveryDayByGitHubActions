@@ -3,6 +3,7 @@ Just for fun project for creating commit(s) every day by GitHub Actions.
 
 If you need (for some reasons) simulate activity on GitHub you can setup your repository with GitHub Action Workflow from this repository.  
 Example of workflow: [action-just4fun.yml](https://github.com/AlekseySpiridonov/commitEveryDayByGitHubActions/blob/master/.github/workflows/action-just4fun.yml)  
+Status of workflow: ![Commit4Fun](https://github.com/AlekseySpiridonov/commitEveryDayByGitHubActions/workflows/Commit4Fun/badge.svg)
   
 You can configurate schedule of job:
 ```
